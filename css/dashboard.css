@@ -89,6 +89,8 @@ nav ul li a {
 .dashboard-field {
   height: max-content;
   background-color: grey;
+  background-color: #b51a8a;
+  box-shadow: 1px 2px 5px grey;
   margin-bottom: 10px;
   width: 400px;
   border-radius: 30px;
@@ -146,6 +148,10 @@ nav ul li a {
   nav {
     display: none;
   }
+  nav ul li a {
+
+    font-size: .7rem;
+}
   .dashboard-content {
     align-self: center;
     margin-left: 0;
