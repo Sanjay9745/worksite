@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -65,7 +65,7 @@ nav ul li a {
 }
 .middle-bar-nav a {
   text-decoration: none;
-  color: #92166F;
+  color: #92166f;
   margin-bottom: 25px;
 }
 /* Dashboard */
@@ -104,7 +104,6 @@ nav ul li a {
   }
   header {
     width: 100%;
-
   }
   .carousel {
     grid-area: carousel;
@@ -114,13 +113,18 @@ nav ul li a {
   }
   .dashboard {
     grid-area: dashboard;
-
-
+  }
+  .dashboard-logo img {
+    margin-left: 160px;
   }
   .dashboard-content {
     align-self: center;
-    margin-left: 200px;
+    margin-left: 250px;
   }
+  .middle-bar-nav a {
+
+    font-size: 1.2rem;
+}
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -131,49 +135,51 @@ nav ul li a {
 }
 
 @media (max-width: 767px) {
-    
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 400px 450px 1fr;
-        grid-template-areas:
-          "middle-bar"
-          "carousel"
-          "dashboard";
-      }
-      nav{
-        display: none;
-      }
-      .dashboard-content {
-        align-self: center;
-        margin-left: 0;
-      }
-      .dashboard-content img {
-        margin-left: 115px;
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 450px 1fr;
+    grid-template-areas:
+      "middle-bar"
+      "carousel"
+      "dashboard";
+  }
+  nav {
+    display: none;
+  }
+  .dashboard-content {
+    align-self: center;
+    margin-left: 0;
+  }
+  .dashboard-content img {
+    margin-left: 115px;
+  }
+  .middle-bar {
+    width: 100%;
+    height: 400px;
+  }
 
-      }
-      .middle-bar{
-        width: 100%;
-        height: 400px;
-      }
-
-      .middle-bar-logo img {
-        display: none;
-    }
-    .carousel {
-        margin-top: 100px;
-        margin-right: 0;
-        width: 100%;
-      }
-      .dashboard-field {
-        width: 100%;
-    
-    }
-
+  .middle-bar-logo img {
+    display: none;
+  }
+  .carousel {
+    margin-top: 100px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .dashboard-field {
+    width: 100%;
+  }
 }
-@media (min-width: 410px) and (max-width: 710px){
-    .container {
-
-        grid-template-rows: 450px 600px 1fr;
-
+@media (min-width: 410px) and (max-width: 710px) {
+  .container {
+    grid-template-rows: 450px 600px 1fr;
+  }
+  .dashboard-content img {
+    margin-left: 180px;
+  }
 }
+@media (max-width: 400px) {
+    .dashboard-content img {
+        margin-left: 75px;
+    }
 }
